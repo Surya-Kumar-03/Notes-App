@@ -1,0 +1,21 @@
+.note {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3rem;
+  background: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 5px #ccc;
+  padding: 1.5rem;
+  margin: 1.5rem;
+  height: auto;
+  width: auto;
+  float: left;
+}
+
+@media only screen and (min-width: 1024px) {
+  .note {
+    height: auto;
+    font-size: 1.25rem;
+    margin: 0.75rem;
+    padding: 1rem;
+  }
+}

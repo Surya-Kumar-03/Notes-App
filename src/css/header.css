@@ -1,0 +1,20 @@
+* {
+  margin: 0px;
+}
+
+.header {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 6rem;
+  background-color: #F5BA13;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 14px 10px -12px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: 0px 14px 10px -12px rgba(0, 0, 0, 0.45);
+  box-shadow: 0px 14px 10px -12px rgba(0, 0, 0, 0.16);
+}
+
+@media only screen and (min-width: 1024px) {
+  .header {
+    font-size: 2.2rem;
+  }
+}

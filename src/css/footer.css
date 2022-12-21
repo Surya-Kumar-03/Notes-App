@@ -1,0 +1,17 @@
+.footer {
+  position: absolute;
+  font-size: 2.75rem;
+  bottom: 0;
+  height: 4.5rem;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: gray;
+}
+
+@media only screen and (min-width: 1024px) {
+  .footer {
+    height: 2.2rem;
+    font-size: 1.25rem;
+  }
+}
