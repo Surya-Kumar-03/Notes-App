@@ -5,7 +5,7 @@
   border-radius: 7px;
   box-shadow: 0 2px 5px #ccc;
   padding: 1.5rem;
-  margin: 1.5rem;
+  margin: 1.5rem 1.5rem 0 0;
   height: auto;
   width: auto;
   float: left;
@@ -15,7 +15,7 @@
   .note {
     height: auto;
     font-size: 1.25rem;
-    margin: 0.75rem;
+    margin: 0.75rem 0.75rem 0 0;
     padding: 1rem;
   }
 }
