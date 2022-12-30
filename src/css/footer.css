@@ -1,13 +1,20 @@
 .footer {
   position: fixed;
   background-color: lightyellow;
-  font-size: 2.75rem;
+  font-size: 3.5rem;
   bottom: 0;
-  height: 4.5rem;
+  height: 6rem;
   width: 100%;
   font-family: "Open Sans", sans-serif;
   text-align: center;
   color: gray;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .footer {
+    height: 2.2rem;
+    font-size: 1.25rem;
+  } 
 }
 
 @media only screen and (min-width: 1024px) {

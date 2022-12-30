@@ -12,7 +12,20 @@
 }
 
 .note:last-child{
-  margin-bottom: 5.6rem;
+  margin-bottom: 7rem;
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .note{
+    height: auto;
+    font-size: 1.25rem;
+    margin: 0.75rem 0.75rem 0 0;
+    padding: 1rem;
+  }
+
+  .note:last-child{
+    margin-bottom: 3.1rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
