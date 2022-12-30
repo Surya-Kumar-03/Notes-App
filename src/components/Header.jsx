@@ -6,7 +6,7 @@ function Header() {
   return (
     <div className="nav-bar">
       <h1 className="header">Your Notes</h1>
-      <img src={logo} className="nav-logo"></img>
+      <img src={logo} className="nav-logo" alt="Brand Logo"></img>
     </div>
   );
 }
