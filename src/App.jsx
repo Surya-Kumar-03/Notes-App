@@ -4,11 +4,13 @@ import Note from "./components/Note";
 import Footer from "./components/Footer";
 import "./App.css";
 import notes from "./components/notes";
+import InputArea from "./components/InputArea";
 
 function App() {
   return (
     <div>
       <Header></Header>
+      <InputArea />
       <div className="container">
         {notes.map((noteItem) => (
           <Note
