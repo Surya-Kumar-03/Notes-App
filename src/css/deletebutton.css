@@ -1,0 +1,9 @@
+.delete-btn {
+  font-family: "Open Sans", sans-serif;
+  font-size: large;
+  color: #f5ba13;
+  background-color: white;
+  cursor: pointer;
+  border: none;
+  float: right;
+}
