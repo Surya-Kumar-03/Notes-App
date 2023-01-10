@@ -20,6 +20,10 @@ function InputArea(props) {
   function submitNote(event) {
     event.preventDefault();
     props.newNote(note);
+    setNote({
+      content: "",
+      title: "",
+    });
   }
 
   return (
@@ -36,6 +40,7 @@ function InputArea(props) {
           name="content"
           placeholder="Notes"
           rows="3"
+          value={note.content}
           onChange={handleChange}
         />
         <button
