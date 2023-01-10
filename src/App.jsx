@@ -1,24 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import Header from "./components/Header";
 import Note from "./components/Note";
 import Footer from "./components/Footer";
 import "./App.css";
-import notes from "./components/notes";
 import InputArea from "./components/InputArea";
 
 function App() {
+  const [notesArray, updateNotesArray] = useState([]);
+
+  function addNote(note) {
+    updateNotesArray((prevNotesArray) => {
+      return [...prevNotesArray, note];
+    });
+    // Call Backend to Store Notes here
+  }
+
   return (
     <div>
       <Header></Header>
-      <InputArea />
+      <InputArea newNote={addNote} />
       <div className="container">
-        {notes.map((noteItem) => (
-          <Note
-            key={noteItem.key}
-            title={noteItem.title}
-            content={noteItem.content}
-          />
-        ))}
+        {notesArray.map((noteItem) => {
+          return <Note title={noteItem.title} content={noteItem.content} />;
+        })}
       </div>
       <Footer></Footer>
     </div>
