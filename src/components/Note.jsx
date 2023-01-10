@@ -1,13 +1,17 @@
 import React from "react";
 import "../css/note.css";
-import DeleteButton from "./DeleteButton";
+import "../css/deletebutton.css"
 
 function Note(props) {
+  function handleClick(){
+    props.onDelete(props.id);
+  }
+
   return (
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <DeleteButton/>
+      <button className="delete-btn" onClick={handleClick}>Delete</button>
     </div>
   );
 }

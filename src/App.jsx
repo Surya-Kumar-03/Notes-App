@@ -15,13 +15,30 @@ function App() {
     // Call Backend to Store Notes here
   }
 
+  function deleteNote(id) {
+    updateNotesArray((prevNotesArray) => {
+      return notesArray.filter((noteItem, index) => {
+        return index !== id;
+      });
+    });
+    // Call Backend to Delete Note here
+  }
+
   return (
     <div>
       <Header></Header>
       <InputArea newNote={addNote} />
       <div className="container">
-        {notesArray.map((noteItem) => {
-          return <Note title={noteItem.title} content={noteItem.content} />;
+        {notesArray.map((noteItem, index) => {
+          return (
+            <Note
+              key={index}
+              id={index}
+              title={noteItem.title}
+              content={noteItem.content}
+              onDelete={deleteNote}
+            />
+          );
         })}
       </div>
       <Footer></Footer>
