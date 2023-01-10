@@ -7,8 +7,9 @@
   padding: 1.5rem;
   margin: 1.5rem 1.5rem 0 0;
   height: auto;
-  width: auto;
+  width: 95vw;
   float: left;
+  word-wrap: break-word;
 }
 
 .note:last-child{

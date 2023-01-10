@@ -10,6 +10,7 @@ function App() {
 
   function addNote(note) {
     updateNotesArray((prevNotesArray) => {
+      if(note.title === "" && note.content === "") return [...prevNotesArray]; 
       return [...prevNotesArray, note];
     });
     // Call Backend to Store Notes here
