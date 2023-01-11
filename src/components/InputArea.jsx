@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "../css/inputarea.css";
+import NoteAddOutlinedIcon from "@mui/icons-material/NoteAddOutlined";
 
 function InputArea(props) {
   const [note, setNote] = useState({
@@ -48,7 +49,7 @@ function InputArea(props) {
           style={{ marginTop: "1rem" }}
           onClick={submitNote}
         >
-          Add Note
+          <NoteAddOutlinedIcon />
         </button>
       </form>
     </div>
