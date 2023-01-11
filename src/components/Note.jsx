@@ -1,9 +1,9 @@
 import React from "react";
 import "../css/note.css";
-import "../css/deletebutton.css"
+import "../css/deletebutton.css";
 
 function Note(props) {
-  function handleClick(){
+  function handleClick() {
     props.onDelete(props.id);
   }
 
@@ -11,7 +11,9 @@ function Note(props) {
     <div className="note">
       <h1>{props.title}</h1>
       <p>{props.content}</p>
-      <button className="delete-btn" onClick={handleClick}>Delete</button>
+      <button className="delete-btn" onClick={handleClick}>
+        Delete
+      </button>
     </div>
   );
 }
