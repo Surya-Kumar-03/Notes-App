@@ -18,26 +18,15 @@
   padding: 0.5rem;
 }
 
-.nav-logo{
-  width: 17.5%;
-}
 
 @media (min-width: 481px) and (max-width: 767px) {
   .header {
     font-size: 2rem;
-  }
-
-  .nav-logo{
-    width: 10%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
   .header {
     font-size: 2.2rem;
-  }
-  
-  .nav-logo{
-    width: 5%;
   }
 }
