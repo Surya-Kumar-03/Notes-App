@@ -1,1 +1,1 @@
-Project work in progress.
+Project's work is in progress.
