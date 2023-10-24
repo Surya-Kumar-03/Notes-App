@@ -32,6 +32,7 @@ function InputArea(props) {
       content: "",
       title: "",
     });
+    setExpanded(false);
   }
 
   return (
@@ -49,7 +50,7 @@ function InputArea(props) {
         <textarea
           name="content"
           placeholder={isExpanded ? "Content here" : "Click to take a Note!"}
-          rows={isExpanded ? "3" : "1"}
+          rows={isExpanded ? "2" : "1"}
           value={note.content}
           onChange={handleChange}
           onClick={expander}

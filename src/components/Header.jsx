@@ -15,7 +15,8 @@ function Header(props) {
             color:"white",
             backgroundColor:"skyblue",
             padding:"0.5rem",
-            borderRadius:"1rem"
+            borderRadius:"1rem",
+            cursor:"pointer"
           }}
           onClick={props.signOut}
         >

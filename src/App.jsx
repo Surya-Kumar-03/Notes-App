@@ -10,7 +10,6 @@ import "firebase/compat/auth";
 import SignIn from "./components/SignIn";
 
 import { useAuthState } from "react-firebase-hooks/auth";
-import { useCollectionData } from "react-firebase-hooks/firestore";
 
 //Firebase Code
 firebase.initializeApp({
